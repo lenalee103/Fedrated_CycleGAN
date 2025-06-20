@@ -4,9 +4,9 @@ dataset: [CIFAR-10]
 framework: [torch, torchvision]
 ---
 
-# Federated Variational Autoencoder with PyTorch and Flower
+# Federated CycleGAN with PyTorch and Flower
 
-This example demonstrates how a variational autoencoder (VAE) can be trained in a federated way using the Flower framework. This example uses [Flower Datasets](https://flower.ai/docs/datasets/) to download, partition and preprocess the CIFAR-10 dataset.
+This example demonstrates how a CycleGAN can be trained in a federated way using the Flower framework. This example uses Flower Platform to run, it includes its partition function and preprocesses the Horse2Zebra dataset.
 
 ## Set up the project
 
@@ -16,14 +16,14 @@ Start by cloning the example project:
 
 ```shell
 git clone --depth=1 https://github.com/adap/flower.git _tmp \
-              && mv _tmp/examples/pytorch-federated-variational-autoencoder . \
-              && rm -rf _tmp && cd pytorch-federated-variational-autoencoder
+              && mv _tmp/examples/pytorch-federated-CycleGAN . \
+              && rm -rf _tmp && cd pytorch-federated-CyecleGAN
 ```
 
-This will create a new directory called `pytorch-federated-variational-autoencoder` with the following structure:
+This will create a new directory called `pytorch-federated-CycleGAN` with the following structure:
 
 ```shell
-pytorch-federated-variational-autoencoder
+pytorch-federated-CycleGAN
 ├── README.md
 ├── fedvaeexample
 │   ├── __init__.py
